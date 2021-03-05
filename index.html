@@ -1,0 +1,1422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/venobox.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div id="header">
+        <div class="left">
+            <a href="">
+                <img src="../../assets/img/web-logo.png" alt="">
+            </a>
+        </div>
+        <div class="center">
+            <a href="">Lịch Chiếu</a>
+            <a href="">Cụm Rạp</a>
+            <a href="">Tin Tức</a>
+            <a href="">Ứng dụng</a>
+        </div>
+        <div class="right">
+            <div id="btnLogin">
+                <a href="">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Đăng Nhập</span>
+                </a>
+            </div>
+            <div class="dropdown" id="locationDropdowns">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                    <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                    <a class="dropdown-item" href="#">Hà Nội</a>
+                    <a class="dropdown-item" href="#">Đà Nẵng</a>
+                    <a class="dropdown-item" href="#">Hải Phòng</a>
+                    <a class="dropdown-item" href="#">Biên Hòa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- carousel -->
+    <!-- <div id="carousel"> -->
+    <section class="carousel-movie">
+        <div class="single-item">
+            <div class="item">
+                <a href="">
+                    <div class="movieShow">
+                        <img src="../../assets/img/lua-deu-gap-lua-dao-16105107337344.jpg" alt="">
+                    </div>
+                    <div class="btnPlay">
+                        <a class="venobox btn btn_newin" data-vbtype="video" href="https://youtu.be/NWEe2BGhOUA">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <div class="movieShow">
+                        <img src="../../assets/img/tazza-16137903733874.jpg" alt="">
+                    </div>
+                    <div class="btnPlay">
+                        <a class="venobox btn btn_newin" data-vbtype="video" href="https://youtu.be/gqcpChNYH10">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- hometools -->
+        <div id="hometools">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 menu">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                Phim
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 menu">
+                        <div id="rap" class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                Rạp
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 menu">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                Ngày xem
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 menu">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                Suất Chiếu
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn"
+                            style="width: 100%; height: 100%; background-color: black; color: white; text-align: center;">Mua
+                            Vé
+                            Ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- movie list -->
+    <section id="movie-list">
+        <div class="container">
+            <div class="title-heading">
+                <ul class="nav  justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Đang Chiếu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sắp Chiếu</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="list-movie">
+                <div class="list ">
+                    <div class="list-item ">
+                        <div class="movie">
+                            <a href="">
+                                <img src="https://s3img.vcdn.vn/mobile/123phim/2021/02/tom-jerry-16127706651597_215x318.png"
+                                    alt="">
+                                <div class="movie-btn">
+                                    <a class="venobox btn btn_newin" data-vbtype="video" href="">
+                                        <!-- <i class="fas fa-play"></i> -->
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="film">
+                                <div class="name-film">
+                                    <span class="age all-age">P</span>
+                                    <span class="movir-title">Tom & Jerry</span>
+                                </div>
+                                <p class="movie-time">100 phút</p>
+                            </div>
+                            <div class="btnBuy">
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item ">
+                        <div class="movie">
+                            <a href="">
+                                <img src="https://s3img.vcdn.vn/mobile/123phim/2020/12/lua-deu-gap-lua-dao-the-con-heartist-c16-16082739589858_215x318.png"
+                                    alt="">
+                                <div class="movie-btn">
+                                    <a class="venobox btn btn_newin" data-vbtype="video"
+                                        href="https://youtu.be/NWEe2BGhOUA">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="film">
+                                <div class="name-film">
+                                    <span class="age all-age">P</span>
+                                    <span class="movir-title">Tom & Jerry</span>
+                                </div>
+                                <p class="movie-time">100 phút</p>
+                            </div>
+                            <div class="btnBuy">
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item ">
+                        <div class="movie">
+                            <a href="">
+                                <img src="https://s3img.vcdn.vn/mobile/123phim/2021/02/tazza-than-bip-jack-chot-tazza-one-eyed-jack-c13-16127716280582_215x318.png"
+                                    alt="">
+                                <div class="movie-btn">
+                                    <a class="venobox btn btn_newin" data-vbtype="video"
+                                        href="https://youtu.be/gqcpChNYH10">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="film">
+                                <div class="name-film">
+                                    <span class="age all-age">P</span>
+                                    <span class="movir-title">Tom & Jerry</span>
+                                </div>
+                                <p class="movie-time">100 phút</p>
+                            </div>
+                            <div class="btnBuy">
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item ">
+                        <div class="movie">
+                            <a href="">
+                                <img src="https://s3img.vcdn.vn/mobile/123phim/2021/01/tay-xa-thu-the-marksman-c16-16111970241171_215x318.png"
+                                    alt="">
+                                <div class="movie-btn">
+                                    <a class="venobox btn btn_newin" data-vbtype="video"
+                                        href="https://youtu.be/g7LeR7chXVM">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="film">
+                                <div class="name-film">
+                                    <span class="age ">C16</span>
+                                    <span class="movir-title">Tay Xạ Thủ - The Marksman (C16)</span>
+                                </div>
+                                <p class="movie-time">107 phút</p>
+                            </div>
+                            <div class="btnBuy">
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item ">
+                        <div class="movie">
+                            <a href="">
+                                <img src="https://s3img.vcdn.vn/mobile/123phim/2021/02/tom-jerry-16127706651597_215x318.png"
+                                    alt="">
+                                <div class="movie-btn">
+                                    <a class="venobox btn btn_newin" data-vbtype="video" href="">
+                                        <!-- <i class="fas fa-play"></i> -->
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="film">
+                                <div class="name-film">
+                                    <span class="age all-age">P</span>
+                                    <span class="movir-title">Tom & Jerry</span>
+                                </div>
+                                <p class="movie-time">100 phút</p>
+                            </div>
+                            <div class="btnBuy">
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item ">
+                        <div class="movie">
+                            <a href="">
+                                <img src="https://s3img.vcdn.vn/mobile/123phim/2020/12/lua-deu-gap-lua-dao-the-con-heartist-c16-16082739589858_215x318.png"
+                                    alt="">
+                                <div class="movie-btn">
+                                    <a class="venobox btn btn_newin" data-vbtype="video"
+                                        href="https://youtu.be/NWEe2BGhOUA">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="film">
+                                <div class="name-film">
+                                    <span class="age all-age">P</span>
+                                    <span class="movir-title">Tom & Jerry</span>
+                                </div>
+                                <p class="movie-time">100 phút</p>
+                            </div>
+                            <div class="btnBuy">
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item ">
+                        <div class="movie">
+                            <a href="">
+                                <img src="https://s3img.vcdn.vn/mobile/123phim/2021/02/tazza-than-bip-jack-chot-tazza-one-eyed-jack-c13-16127716280582_215x318.png"
+                                    alt="">
+                                <div class="movie-btn">
+                                    <a class="venobox btn btn_newin" data-vbtype="video"
+                                        href="https://youtu.be/gqcpChNYH10">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="film">
+                                <div class="name-film">
+                                    <span class="age all-age">P</span>
+                                    <span class="movir-title">Tom & Jerry</span>
+                                </div>
+                                <p class="movie-time">100 phút</p>
+                            </div>
+                            <div class="btnBuy">
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item ">
+                        <div class="movie">
+                            <a href="">
+                                <img src="https://s3img.vcdn.vn/mobile/123phim/2021/01/tay-xa-thu-the-marksman-c16-16111970241171_215x318.png"
+                                    alt="">
+                                <div class="movie-btn">
+                                    <a class="venobox btn btn_newin" data-vbtype="video"
+                                        href="https://youtu.be/g7LeR7chXVM">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="film">
+                                <div class="name-film">
+                                    <span class="age ">C16</span>
+                                    <span class="movir-title">Tay Xạ Thủ - The Marksman (C16)</span>
+                                </div>
+                                <p class="movie-time">107 phút</p>
+                            </div>
+                            <div class="btnBuy">
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- lịch chiếu phim -->
+    <div class="container">
+        <div class="row lich__ChieuPhim">
+            <ul class="col-sm-2  nav nav-tabs  list-group list-group-item px-sm-5 overflow-auto logo__phim">
+                <li class="nav-item active">
+                    <a href="#">
+                        <img src="./img/bhd/bhd.png" alt="" class="img-fluid w-100 h-100">
+                    </a>
+                    <hr>
+                </li>
+                <li class="nav-item ">
+                    <a href="#">
+                        <img src="./img/cns/cns.png" alt="" class="w-100 h-100">
+                    </a>
+                    <hr>
+                </li>
+                <li class="nav-item ">
+                    <a href="#">
+                        <img src="./img/ddc/ddc.png" alt="" class="img-fluid w-100 h-100">
+                    </a>
+                    <hr>
+                </li>
+                <li class="nav-item ">
+                    <a href="#">
+                        <img src="./img/megags/megags.png" alt="" class="img-fluid w-100 h-100">
+                    </a>
+                    <hr>
+                </li>
+                <li class="nav-item ">
+                    <a href="#">
+                        <img src="./img/dcine/dcine.jpg" alt="" class="img-fluid w-100 h-100">
+                    </a>
+                    <hr>
+                </li>
+                <li class="nav-item ">
+                    <a href="#">
+                        <img src="./img/lotte/lotte.png" alt="" class="img-fluid w-100 h-100">
+                    </a>
+                    <hr>
+                </li>
+            </ul>
+            <div class="col-sm-3  border p-0 overflow-auto diadiem__Phim">
+                <div class="pt-4 px-3 pb-2 active diadiem__Phim__item ">
+                    <div class="d-flex ">
+                        <img src="./img/bhd/bhd-star-bitexco-16105952137769.png" alt=""
+                            class="img-fluid w-25 h-25 mr-3">
+                        <div class="">
+                            <p class="font-weight-bolder m-0"><span class="text-success font-weight-bolder">BHD
+                                    Star</span>
+                                - Bitexco</p>
+                            <span class="d-inline-block text-truncate" style="max-width: 180px;">
+                                L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                            </span>
+                            <a href="#" class="text-danger btn p-0">[chi tiết]</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 py-2 diadiem__Phim__item">
+                    <div class="d-flex ">
+                        <img src="./img/bhd/bhd-star-vincom-thao-dien-16105955634183.png" alt=""
+                            class="img-fluid w-25 h-25 mr-3">
+                        <div class="">
+                            <p class="font-weight-bolder m-0"><span class="text-success font-weight-bolder">BHD
+                                    Star</span>
+                                - Vincom Thảo Điền</p>
+                            <span class="d-inline-block text-truncate" style="max-width: 180px;">
+                                L5-Megamall, 159 XL Hà Nội, Q.2
+                            </span>
+                            <a href="#" class="text-danger btn p-0">[chi tiết]</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 py-2 diadiem__Phim__item">
+                    <div class="d-flex">
+                        <img src="./img/bhd/bhd-star-vincom-3-2-16105957596860.png" alt=""
+                            class="img-fluid w-25 h-25 mr-3">
+                        <div class="">
+                            <p class="font-weight-bolder m-0"><span class="text-success font-weight-bolder">BHD
+                                    Star</span>
+                                - Vincom 3/2</p>
+                            <span class="d-inline-block text-truncate" style="max-width: 180px;">
+                                L5-Vincom 3/2, 3C Đường 3/2, Q.10
+                            </span>
+                            <a href="#" class="text-danger btn p-0">[chi tiết]</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 py-2 diadiem__Phim__item">
+                    <div class="d-flex">
+                        <img src="./img/bhd/bhd-star-pham-hung-16105959230642.png" alt=""
+                            class="img-fluid w-25 h-25 mr-3">
+                        <div class="">
+                            <p class="font-weight-bolder m-0"><span class="text-success font-weight-bolder">BHD
+                                    Star</span>
+                                - Phạm Hùng</p>
+                            <span class="d-inline-block text-truncate" style="max-width: 180px;">
+                                L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình Chánh
+                            </span>
+                            <a href="#" class="text-danger btn p-0">[chi tiết]</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 py-2  diadiem__Phim__item">
+                    <div class="d-flex">
+                        <img src="./img/bhd/bhd-star-vincom-quang-trung-16105960645760.png" alt=""
+                            class="img-fluid w-25 h-25 mr-3">
+                        <div class="">
+                            <p class="font-weight-bolder m-0"><span class="text-success font-weight-bolder">BHD
+                                    Star</span>
+                                - Vincom Quang Trung</p>
+                            <span class="d-inline-block text-truncate" style="max-width: 180px;">
+                                B1-Vincom QT, 190 Quang Trung, Gò Vấp
+                            </span>
+                            <a href="#" class="text-danger btn p-0">[chi tiết]</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 py-2 diadiem__Phim__item">
+                    <div class="d-flex">
+                        <img src="./img/bhd/bhd-star-vincom-le-van-viet-16105962051265.png" alt=""
+                            class="img-fluid w-25 h-25 mr-3">
+                        <div class="">
+                            <p class="font-weight-bolder m-0"><span class="text-success font-weight-bolder">BHD
+                                    Star</span>
+                                - Vincom Lê Văn Việt</p>
+                            <span class="d-inline-block text-truncate" style="max-width: 180px;">
+                                L4-Vincom Plaza, 50 Lê Văn Việt, Q.9
+                            </span>
+                            <a href="#" class="text-danger btn p-0">[chi tiết]</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-7  border p-0 overflow-auto chitiet__phim">
+                <div class="pt-4 pb-2 px-3">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex ">
+                            <div class="mr-4">
+                                <img src="./img/movie/tom-jerry-16127706651597_60x60.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="btn btn-success m-0">P</h1>
+                                <span class="font-weight-bolder"> Tom & Jerry</span>
+                                <p class="m-0">100 phút - TIX 7.7 - IMDb 0</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                            <h4 class="m-0">2D Digital</h4>
+                            <div>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success ">17:15</span>
+                                    ~ 18:55
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">19:10</span>
+                                    ~ 20:50
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">20:45</span>
+                                    ~ 22:25
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">22:00</span>
+                                    ~ 23:40
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 pb-2">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex ">
+                            <div class="mr-4">
+                                <img src="./img/movie/lua-deu-gap-lua-dao-the-con-heartist-c16-16082739589858_60x60.png"
+                                    alt="">
+                            </div>
+                            <div>
+                                <h1 class="btn btn-danger m-0">C16</h1>
+                                <span class="font-weight-bolder"> Lừa Đểu Gặp Lừa Đảo - The Con-Heartist </span>
+                                <p class="m-0">128 phút - TIX 8.8 - IMDb 0</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                            <h4 class="m-0">2D Digital</h4>
+                            <div>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">19:35</span>
+                                    ~ 21:43
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">22:00</span>
+                                    ~ 00:08
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 pb-2">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex ">
+                            <div class="mr-4">
+                                <img src="./img/movie/tazza-than-bip-jack-chot-tazza-one-eyed-jack-c13-16127716280582_60x60.png"
+                                    alt="">
+                            </div>
+                            <div>
+                                <h1 class="btn btn-danger m-0">C13</h1>
+                                <span class="font-weight-bolder"> Tazza: Thần Bịp Jack Chột - Tazza: One Eyed Jack
+                                </span>
+                                <p class="m-0">139 phút - TIX 8.3 - IMDb 0</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                            <h4 class="m-0">2D Digital</h4>
+                            <div>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">19:25</span>
+                                    ~ 21:44
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">22:00</span>
+                                    ~ 00:19
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 pb-2">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex ">
+                            <div class="mr-4">
+                                <img src="./img/movie/tom-jerry-16127706651597_60x60.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="btn btn-success m-0">P</h1>
+                                <span class="font-weight-bolder"> Tom & Jerry</span>
+                                <p class="m-0">100 phút - TIX 7.7 - IMDb 0</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                            <h4 class="m-0">2D Digital</h4>
+                            <div>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">17:15</span>
+                                    ~ 18:55
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">19:10</span>
+                                    ~ 20:50
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">20:45</span>
+                                    ~ 22:25
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">22:00</span>
+                                    ~ 23:40
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 pb-2">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex ">
+                            <div class="mr-4">
+                                <img src="./img/movie/kieu-16137205526238_60x60.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="btn btn-danger m-0">C18</h1>
+                                <span class="font-weight-bolder"> Kiều @</span>
+                                <p class="m-0">0 phút - TIX 7.5 - IMDb 0</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                            <h4 class="m-0">2D Digital</h4>
+                            <div>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">22:40</span>
+                                    ~
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 pb-2">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex ">
+                            <div class="mr-4">
+                                <img src="./img/movie/sieu-trom-duong-pho-16139791273302_60x60.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="btn btn-success m-0">C16</h1>
+                                <span class="font-weight-bolder"> Siêu Trộm Đường Phố</span>
+                                <p class="m-0">90 phút - TIX 5.5 - IMDb 0</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                            <h4 class="m-0">2D Digital</h4>
+                            <div>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">18:20</span>
+                                    ~ 19:50
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="px-3 pb-2">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex ">
+                            <div class="mr-4">
+                                <img src="./img/movie/palm-springs-mo-mat-thay-hom-qua-16142434274044_60x60.jpg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="btn btn-success m-0">P</h1>
+                                <span class="font-weight-bolder"> PALM SPRINGS: Mở mắt thấy hôm qua</span>
+                                <p class="m-0">90 phút - TIX 0 - IMDb 0</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                            <h4 class="m-0">2D Digital</h4>
+                            <div>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">19:00</span>
+                                    ~ 20:30
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">20:05</span>
+                                    ~ 21:35
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">21:05</span>
+                                    ~ 22:35
+                                </a>
+                                <a href="#" class="btn btn-light border w-25 mr-2 mt-2">
+                                    <span class="font-weight-bolder text-success">22:50</span>
+                                    ~ 00:20
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end lịch chiếu phim -->
+    <!-- Content phim -->
+    <div class="container wrapContent">
+        <ul class="nav nav-tabs justify-content-center pt-5" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#dienAnh24h">
+                    <h1>điện ảnh 24h</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#review">
+                    <h1>review</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#khuyenMai">
+                    <h1>khuyến mãi</h1>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane container active" id="dienAnh24h">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="#">
+                            <img src="./img/dienanh24h/khai-truong-rap-xin-gia-ngon-chuan-xi-tai-sai-gon-16111317082644.jpg"
+                                alt="" class="img-fluid w-100">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 titleHeigt50">Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class=" newsDescription">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới
+                            đây thành phố HCM
+                            sẽ chào đón
+                            một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!</p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#">
+                            <img src="./img/dienanh24h/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056938333773.jpg"
+                                alt="" class="img-fluid w-100">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 titleHeigt50">“Bóc tem” tổ hợp giải trí mới toanh của giới Hà Thành</h5>
+                        </a>
+                        <p class=" newsDescription">Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo
+                            độc-lạ-chill nhất từ trước
+                            đến giờ sẽ chính thức khai trương tại 360 Giải Phóng!</p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/dienanh24h/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043752411629.png"
+                                alt="" class="img-fluid">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 text-left textHiden titleHeigt50">Tiệc Trăng Máu chính thức cán mốc 100 tỷ
+                                chỉ sau 2 tuần công
+                                chiếu </h5>
+                        </a>
+                        <p class=" newsDescription">Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia nhập câu lạc bộ
+                            phim điện ảnh đạt 100 tỷ đồng doanh thu phòng vé. Dàn ngôi sao “bạc tỷ” của phim cũng lần
+                            đầu tiên hội tụ đầy đủ trong một khung hình để ăn mừng thành tích ấn tượng của tác phẩm.
+                        </p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/dienanh24h/ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman-16041597587981.jpg"
+                                alt="" class="img-fluid">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 text-left textHiden titleHeigt50">NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI
+                                THIẾT KẾ TRANG PHỤC
+                                CHO SIÊU ANH HÙNG ĐẦU TIÊN CỦA VIỆT NAM – VINAMAN</h5>
+                        </a>
+                        <p class=" newsDescription">Chiều tối ngày 30-10-2020, Ngô Thanh Vân và Studio68 đã chính thức
+                            phát động cuộc thi thiết kế trang phục cho siêu anh hùng VINAMAN với tổng giá trị giải
+                            thưởng lên đến 60 triệu đồng.
+                        </p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row pb-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/dienanh24h/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503793246.png"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị
+                                        Antebellum: Bẫy Thực Tại
+                                        Kinh Hoàng</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/dienanh24h/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122262210.png"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle "> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu
+                                        doanh thu tại Hàn Quốc mùa dịch</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/dienanh24h/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503793246.png"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt
+                                        Christopher Nolan</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/dienanh24h/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122262210.png"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng
+                                        vé' xứ Hàn</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="review">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img src="./img/review/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png"
+                                alt="" class="img-fluid w-100">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class=" m-0 titleHeigt50">Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết
+                            </h5>
+                        </a>
+                        <p class=" newsDescription">Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích Quỷ Ám</p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img src="./img/review/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""
+                                class="img-fluid w-100">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 titleHeigt50">Review: Dinh Thự Oan Khuất (Ghost Of War)</h5>
+                        </a>
+                        <p class=" newsDescription">Tuy là một bộ phim có chất lượng tốt, nhưng có vẻ Dinh Thự Oan
+                            Khuất vẫn chưa đủ để đem khán giả trở lại phòng vé!</p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/review/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png"
+                                alt="" class="img-fluid">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 text-left textHiden titleHeigt50">‘BlacKkKlansman’ - cốc nước lạnh để người
+                                Mỹ thức tỉnh</h5>
+                        </a>
+                        <p class=" newsDescription">Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar 2019 của đạo diễn
+                            Spike Lee là một lát cắt nữa về nạn phân biệt chủng tộc - nỗi đau
+                        </p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/review/american-sniper-chinh-nghia-hay-phi-nghia-15905660338111.png" alt=""
+                                class="img-fluid">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 text-left textHiden titleHeigt50">American Sniper - Chính nghĩa hay phi
+                                nghĩa?</h5>
+                        </a>
+                        <p class=" newsDescription">American Sniper khắc họa một tay súng bắn tỉa “huyền thoại” của Hải
+                            quân Mỹ với 4 lần tham chiến ở Trung Đông. Câu chuyện phim chậm rãi
+                        </p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row pb-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/review/review-spider-man-into-the-spider-vesre-15886520889426.png"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">Review: Spider-Man: Into The Spider-Vesre </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/review/covid-19-la-ban-chinh-thuc-cua-mev-1-phim-contagion-2011-15843496198482.jpg"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle "> COVID-19 là bản chính thức của MEV-1 phim contagion (2011)
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/review/review-sieu-ve-si-so-vo-giai-cuu-tong-thong-chua-bao-gio-lay-loi-va-hai-huoc-den-the-15840925506832.jpg"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">[Review] Siêu Vệ Sĩ Sợ Vợ - Giải cứu Tổng thống chưa bao giờ
+                                        lầy lội và hài hước đến thế</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/review/review-bloodshot-mo-man-an-tuong-cho-vu-tru-sieu-anh-hung-valiant-15840731141389.jpg"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">[Review] Bloodshot - Mở màn ấn tượng cho Vũ trụ Siêu anh hùng
+                                        Valiant</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row tab-pane container fade" id="khuyenMai">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img src="./img/khuyenmai/bhd-59k-ve-ca-tuan-16088081864967.jpg" alt=""
+                                class="img-fluid w-100">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 titleHeigt50">BHD 59K/VÉ CẢ TUẦN !!!</h5>
+                        </a>
+                        <p class=" newsDescription">Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá 59k/vé
+                            khi mua vé trên TIX hoặc Mục Vé Phim trên ZaloPay.</p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img src="./img/khuyenmai/tix-1k-ve-ngai-chi-gia-ve-16045662877511.jpg" alt=""
+                                class="img-fluid w-100">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 titleHeigt50">TIX 1K/VÉ NGẠI CHI GIÁ VÉ</h5>
+                        </a>
+                        <p class=" newsDescription h-15">Đồng giá 1k/vé cả tuần tất cả các rạp trên TIX + Nhận thêm 02
+                            voucher thanh toán ZaloPay thả ga</p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/khuyenmai/dong-gia-1k-ve-khi-mua-ve-qua-tix-16010092946804.png" alt=""
+                                class="img-fluid">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 text-left textHiden titleHeigt50">ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX </h5>
+                        </a>
+                        <p class=" newsDescription">ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX Hành trình tìm Ròm và Phúc chỉ với
+                            1k cả tuần + nhận thêm 02 voucher khi đặt vé qua TIX.
+                        </p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/khuyenmai/bhd-star-ve-chi-59-000d-ca-tuan-15937622264546.jpg" alt=""
+                                class="img-fluid">
+                        </a>
+                        <a href="#" class="btn p-0 mt-3 mb-2">
+                            <h5 class="m-0 text-left textHiden titleHeigt50">BHD STAR VÉ CHỈ 59.000Đ CẢ TUẦN!</h5>
+                        </a>
+                        <p class=" newsDescription">Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá 59k/vé
+                            khi mua vé trên TIX và thanh toán bằng ZaloPay hoặc Mục Vé Phim
+                        </p>
+                        <div class="font-size20">
+                            <i class="far fa-thumbs-up mr-2 wrapIcon"></i> <span class="">2</span>
+                            <i class="far fa-comment-alt ml-4 mr-2 wrapIcon"></i> <span class="">0</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row pb-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/khuyenmai/beta-cineplex-tro-lai-voi-hang-loat-uu-dai-lon-15889408112010.png"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">Beta Cineplex trở lại với hàng loạt ưu đãi lớn</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/khuyenmai/123phim-thu-6-khong-den-toi-uu-dai-huy-diet-11k-ve-anh-trai-yeu-quai-15746757294099.jpg"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle "> [123Phim] Thứ 6 Không Đen Tối - Ưu đãi huỷ diệt 11k/vé Anh
+                                        Trai Yêu Quái</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/khuyenmai/123phim-nhap-ma-psm30k-giam-ngay-30k-khi-dat-ve-phap-su-mu-ai-chet-gio-tay-15729439018211.jpg"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">[123Phim] NHẬP MÃ 'PSM30K' - Giảm ngay 30k khi đặt vé Pháp Sư
+                                        Mù: Ai Chết Giơ Tay</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-2 p-0">
+                                <a href="#">
+                                    <img src="./img/khuyenmai/mega-gs-mot-doa-hoa-thay-ngan-loi-yeu-15713106082164.jpg"
+                                        alt="" class="img-fluid rounded w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 pr-0">
+                                <a href="#" class="btn p-0">
+                                    <h5 class="newsTitle ">[Mega GS] Một đoá hoa thay ngàn lời yêu</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-3 mb-5">
+            <button class="btn__xemthem">xem thêm</button>
+        </div>
+    </div>
+    <!-- end Content phim -->
+    <!-- app phim -->
+    <div class="app__Phim">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6">
+                    <h1 class="text-white">Ứng dụng tiện lợi dành cho
+
+                        người yêu điện ảnh</h1>
+                    <p class="text-white">Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp
+                        dẫn.</p>
+                    <button class="btn btn-danger btn__APP py-3 px-4 text-white font-weight-bold">App miễn phí - Tải về
+                        ngay!</button>
+
+                    <p class="text-white">TIX có hai phiên bản
+                        <a target="_blank" href="#" class=" text-white">iOS</a>
+                        &amp;&nbsp;<a target="_blank" href="#" class=" text-white">Android</a>
+                    </p>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="appphim__right">
+
+                        <img src="./img/appphim/mobile.png" alt="" class="phone__Img img-fluid">
+                        <div class="slick__list">
+                            <div class="slick_slider">
+                                <div class="slick__img">
+                                    <img src="./img/appslide/slide10.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="slick__img">
+                                    <img src="./img/appslide/slide11.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="slick__img">
+                                    <img src="./img/appslide/slide12.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="slick__img">
+                                    <img src="./img/appslide/slide13.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="slick__img">
+                                    <img src="./img/appslide/slide14.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="slick__img">
+                                    <img src="./img/appslide/slide2.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="slick__img">
+                                    <img src="./img/appslide/slide8.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="slick__img">
+                                    <img src="./img/appslide/slide9.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end app phim -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>tix</h5>
+                    <div class="row py-3">
+                        <div class="col-sm-6 d-flex flex-column">
+                            <a href="#">FAQ</a>
+                            <a href="#">Brand Guidelines</a>
+                        </div>
+                        <div class="col-sm-6 d-flex flex-column">
+                            <a href="#"> Thỏa thuận sử dụng </a>
+                            <a href="#">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-4 col-xs-12 footer__logo">
+                    <h5>đối tác</h5>
+                    <div class="d-flex justify-content-between py-3">
+                        <a href="#">
+                            <img src="./img/footer/bhd.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/bt.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/cgv.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/cinestar.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/cnx.jpg" alt="" class="">
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between py-3">
+                        <a href="#">
+                            <img src="./img/footer/dcine.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/dongdacinema.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/galaxycine.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/IVB.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/laban.png" alt="" class="">
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between py-3">
+                        <a href="#">
+                            <img src="./img/footer/lotter.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/megags.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/payoo.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/STARLIGHT.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/TOUCH.png" alt="" class="">
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between py-3">
+                        <a href="#">
+                            <img src="./img/footer/VCB.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/VIETTINBANK.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/zalopay_icon.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/123go.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/AGRIBANK.png" alt="" class="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <h5>mobile app</h5>
+                    <div class="py-3">
+                        <a href="#"><i class="fab fa-apple font-size50 p-3"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square font-size50 p-3"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <h5>social</h5>
+                    <div class="py-3">
+                        <a href="#"><i class="fab fa-apple font-size50 p-3"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square font-size50 p-3"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="hrFooter">
+
+            <div class="row">
+                <div class="col-sm-1 col-xs-12 p-0">
+                    <img src="./img/footer/zion-logo.jpg" alt="" class="rounded img-fluid">
+                </div>
+                <div class="col-sm-9 col-xs-12 infoFooter">
+                    <h5>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h5>
+                    <p class="mb-0">
+                        <span>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</span>
+                    </p>
+                    <p class="mb-0">
+                        <span>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,<br>đăng ký thay đổi
+                            lần&nbsp;thứ&nbsp;30,
+                            ngày&nbsp;22&nbsp;tháng&nbsp;01&nbsp;năm&nbsp;2020 do
+                            Sở&nbsp;kế&nbsp;hoạch&nbsp;và&nbsp;đầu&nbsp;tư Thành phố Hồ Chí Minh cấp.</span>
+                    </p>
+                    <p>
+                        <span>Số Điện Thoại (Hotline): 1900&nbsp;545&nbsp;436<br>Email: <a href="mailto:support@tix.vn"
+                                style="color: #FB4226;">support@tix.vn</a></span>
+                    </p>
+                </div>
+                <div class="col-sm-2 col-xs-12 imgFooter">
+                    <a target="_blank" href="#"><img src="./img/footer/d1e6bd560daa9e20131ea8a0f62e87f8.png"
+                            class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.single-item').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: true,
+
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.list').slick({
+                autoplay: false,
+                rows: 2,
+                arrows: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+
+            });
+        });
+    </script>
+    <script src="./assets/js/venobox.min.js"></script>
+    <script type="text/javascript">
+
+
+
+
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slick_slider').slick({
+                autoplaySpeed: 3000,
+                autoplay: false,
+                Accessibility: true,
+                adaptiveHeight: false,
+                arrows: false,
+            });
+        });
+    </script>
+</body>
+
+</html>

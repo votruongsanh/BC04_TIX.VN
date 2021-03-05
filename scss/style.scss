@@ -1,0 +1,166 @@
+$height750: 900px;
+
+//lịch chiếu phim
+.lich__ChieuPhim {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  .logo__phim,
+  .diadiem__Phim,
+  .chitiet__phim {
+    height: $height750;
+  }
+  .logo__phim {
+    > li.active a img {
+      opacity: 1;
+    }
+    li a img {
+      opacity: 0.3;
+    }
+    li:hover a img {
+      opacity: 1;
+    }
+  }
+  .diadiem__Phim {
+    .diadiem__Phim__item {
+      cursor: pointer;
+      opacity: 0.3;
+    }
+    > .diadiem__Phim__item.active {
+      opacity: 1;
+    }
+    .diadiem__Phim__item:hover {
+      opacity: 1;
+    }
+  }
+}
+//end lịch chiếu phim
+
+//lịch trình chiếu phim
+.wrapContent {
+  .nav-tabs .nav-link {
+    border: none;
+    color: #495057;
+    text-transform: capitalize;
+  }
+  .nav-tabs .nav-link.active {
+    color: red;
+  }
+  .nav-tabs {
+    border-bottom: none;
+  }
+  .font-size20 {
+    font-size: 20px;
+    color: rgb(190, 185, 185);
+    cursor: pointer;
+  }
+  .wrapIcon:hover {
+    font-size: 24px;
+    transition: all 0.5s;
+  }
+  .newsDescription {
+    height: 80px;
+    overflow: hidden;
+    text-align: justify;
+  }
+}
+.titleHeigt50 {
+  height: 50px;
+}
+.textHiden {
+  overflow: hidden;
+  text-overflow: ellipsis; /* text-overflow: clip; */
+}
+.newsTitle {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50px;
+}
+.btn__xemthem {
+  color: #949494;
+  font-family: "SF Regular";
+  border: 1px solid #949494;
+  border-radius: 4px;
+  text-align: center;
+  padding: 8px 25px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+.btn__xemthem:hover {
+  background-color: #fb4226;
+  color: white;
+}
+// end lịch trình chiếu phim
+
+// footer
+footer {
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #949494;
+  h5 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  a {
+    font-weight: 700;
+    color: #949494;
+    text-decoration: none !important;
+    line-height: 40px;
+  }
+  a:hover {
+    color: white;
+  }
+  .footer__logo a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .footer__logo a {
+    transition: all 0.5s;
+  }
+  .footer__logo a:hover {
+    opacity: 0.3;
+  }
+  .hrFooter {
+    border-top: 1px solid #4a4a4a;
+  }
+}
+.font-size50 {
+  font-size: 50px;
+}
+
+// app phim
+.btn__APP{
+  background-color: #fb4226;
+  border-radius: 8px;
+  border: #fb4226;
+  font-size: 20px;
+}
+.app__Phim{
+  padding: 120px 0 80px 0;
+  background-image: url("https://tix.vn/app/assets/img/icons/backapp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .appphim__right {
+    position: relative;
+    .phone__Img{
+      padding: 0 25%;
+    }
+    .slick__list{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 25%;
+    }
+  }
+}
+.slick-slider{
+  overflow: hidden ;
+  border-radius: 20px;
+}
